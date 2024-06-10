@@ -1,0 +1,19 @@
+<!-- templates/about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask App - about Page</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<h1>Hello and welcome to my about page</h1>
+	<p>this page has not been copy written and all opinions expressed are strictly hogwash</p>
+<!-- Common header, navigation, etc. -->
+{% block content %}
+<!-- Content specific to each page -->
+{% endblock %}
+<!-- Common footer, etc. -->
+</body>
+</html>
