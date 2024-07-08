@@ -1,4 +1,6 @@
 <!-- templates/about.html -->
+{% extends "base.html" %}
+{% endblock %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +10,17 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-	<h1>Hello and welcome to my about page</h1>
-	<p>this page has not been copy written and all opinions expressed are strictly hogwash</p>
+	
 <!-- Common header, navigation, etc. -->
 {% block content %}
+<div class = "container">
+    <div class = "row">
+        <div class = col one >hello</div>
+        <div class = col two >world</div>
+    </div>
+</div>
+<h1>Hello and welcome to my about page</h1>
+<p>this page has not been copy written and all opinions expressed are strictly hogwash</p>
 <!-- Content specific to each page -->
 {% endblock %}
 <!-- Common footer, etc. -->
